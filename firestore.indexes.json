@@ -1,0 +1,19 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "adminUser",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {"fieldPath": "isSuperAdmin", "order": "ASCENDING"},
+        {"fieldPath": "createdAt", "order":"DESCENDING"}
+      ]
+    }
+  ],
+  "fieldOverrides": [
+    {
+      "collectionGroup": "adminUser",
+      "fieldPath": "isSuperAdmin",
+      "indexes": []
+    }
+  ]
+}
